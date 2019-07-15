@@ -12,16 +12,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style type="text/css">
-        .grid {
-            background-size: 20px 20px;
-            background-image: linear-gradient(to right, #cecece 1px, transparent 1px), linear-gradient(to bottom, #cecece 1px, transparent 1px);
-            position: fixed;
-            z-index: -1;
-            width: 100vw;
-            height: 100vh;
-            opacity: 0.1;
-            top: 0;
-            left: 0;
+        html {
+            overflow-x: hidden;
         }
         .banner {
         	padding: 0;
@@ -37,6 +29,7 @@
         }
         .left_column {
     		border-right: 2px solid #3b4351;
+            margin-right: -2px;
         }
         .left_column .section {
         	padding: 2.5rem 2rem 1rem 0rem;
@@ -77,6 +70,9 @@
 		  height: 100%;
 		}
         @media (max-width: 840px) {
+            .left_column {
+                border: none;
+            }
             .left_column .section, .right_column .section {
                 padding: 2rem 1rem 0rem;
             }
