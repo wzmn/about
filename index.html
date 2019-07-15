@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wiseman's Compendium</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style type="text/css">
+        .grid {
+            background-size: 20px 20px;
+            background-image: linear-gradient(to right, #cecece 1px, transparent 1px), linear-gradient(to bottom, #cecece 1px, transparent 1px);
+            position: fixed;
+            z-index: -1;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.1;
+            top: 0;
+            left: 0;
+        }
+        .banner {
+        	padding: 0;
+        }
+        .about_me h4, .contact_me h4, .language h4, .skills h4, .right_column .section h4 {
+    		border-bottom: 1px solid #dadee4;
+    		display: inline-block;
+    		width: 100%;
+    		padding-bottom: 10px;
+        }
+        .right_column .section h4 i {
+			margin-right: 10px;
+        }
+        .left_column {
+    		border-right: 2px solid #3b4351;
+        }
+        .left_column .section {
+        	padding: 2.5rem 2rem 1rem 0rem;
+        }
+        .right_column .section {
+        	padding: 2.5rem 0rem 1rem 2rem;
+        }
+        .skills .skill{
+        	margin: 10px 0;
+        }
+        .hero {
+        	min-height: 90vh;
+        	position: relative;
+            border-bottom: 2px solid #3b4351;
+        }
+        .hero h1 {
+        	font-size: 5vmax;
+        }
+        .hero h1:first-child {
+            margin-bottom: 0;
+        }
+        .hero .hero-body {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+        }
+        .tile.tile-centered .tile-subtitle, .tile.tile-centered .tile-title {
+            white-space: unset;
+        }
+        .footer .column {
+        	padding: 4rem;
+        }
+		#particles-js {
+		  position: absolute;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+        @media (max-width: 840px) {
+            .left_column .section, .right_column .section {
+                padding: 2rem 1rem 0rem;
+            }
+            .timeline .timeline-item .timeline-content .tile-centered {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container banner">
+        <div class="columns">
+            <div class="column">
+                <div class="hero bg-dark">
+					<div id="particles-js"></div>
+                    <div class="hero-body text-center">
+						<div id="scene1">
+							<div data-depth="3.5"><h1>Wiseman</h1></div>
+						</div>    
+						<div id="scene2">
+							<div data-depth="2.5"><h1>Fernandes</h1></div>							
+						</div>                    
+						<div id="scene3">
+							<div data-depth="1.5" data-origin-x="1"  data-origin-y="1"><p>Web Developer</p></div>							
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container grid-xl">
+        <div class="columns">
+            <div class="column col-4 col-lg-4 col-md-12 left_column">
+                <div class="section mt-10 about_me text-center" data-aos="fade-right">
+                    <h4>About Me</h4>
+                    <div class="content">
+                        <p>Hi, I'm Wiseman, a freelance web designer,based in Goa, India. Originally a network engineer, I left networking and transitioned to working solely as a web developer.</p>
+                    </div>
+                </div>
+                <div class="section contact_me text-center" data-aos="fade-right">
+                    <h4>Contact</h4>
+                    <div class="content">
+                    	<div class="phone">
+	                    	<i class="material-icons">phone</i>
+	                    	<p>
+	                    		<a href="tel:+91 897 557 4907">+91 897 557 4907</a>
+	                    	</p>
+                    	</div>
+                    	<div class="mail">
+	                    	<i class="material-icons">email</i>
+	                    	<p>
+	                    		<a href="mailto:wizyman@gmail.com">wizyman@gmail.com</a>
+	                    	</p>
+                    	</div>
+                    	<div class="mail">
+	                    	<i class="material-icons">location_on</i>
+	                    	<p>Gurgaaon, Haryana</p>
+                    	</div>
+                    </div>
+                </div>
+                <div class="section language text-center" data-aos="fade-right">
+                    <div class="title">
+                    	<h4>Languages</h4>
+                    </div>
+                    <div class="content">
+                    	<div class="english mt-2">
+							<h6>English</h6>
+                            <progress class="progress" value="95" max="100"></progress>
+                    	</div>
+						<div class="hindi mt-2">
+							<h6>Hindi</h6>
+                            <progress class="progress" value="55" max="100"></progress>
+						</div>		
+                    </div>
+                </div>
+                <div class="section skills text-center" data-aos="fade-right">
+                    <div class="title">
+						<h4>Skills</h4>
+                    </div>		
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column col-6 skill">
+                                <p>HTML</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>CSS</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>Javascipt</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>Javascipt Frameworks</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>PHP</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>WordPress</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>Design</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>System Administration</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>Networking</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="column col-6 skill">
+                                <p>Information Security</p>
+                                <div class="bar bar-sm">
+                                    <div class="bar-item" role="progressbar" style="width:50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-8 col-md-12 right_column">
+                <div class="section work_experience">
+					<div class="title" data-aos="zoom-in-down">
+						<h4><i class="material-icons">work</i>Work Experience</h4>
+					</div>
+                    <div class="content">
+                        <div class="timeline">
+                            <div class="timeline-item" id="work-1" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-1"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Senior WordPress Developer</h5>
+                                                <h6>Altudo</h6>
+                                            </div>
+                                            <p class="tile-subtitle">Responsible for both back-end and front-end development,<br> including creating WordPress themes and plugins.</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2018 - Present</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="work-2" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Freelance</h5>
+                                            </div>
+                                            <p class="tile-subtitle">Freelance full-stack WordPress web developer</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2016 - 2017</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="work-3" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Web Developer</h5>
+                                                <h6>Webbles</h6>
+                                            </div>
+                                            <p class="tile-subtitle">Responsible for designing, coding and modifying websites, <br>from layout to function and according to a client's specification.</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2015 - 2015</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="work-4" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Quality Assurance Specialist</h5>
+                                                <h6>Kodework</h6>
+                                            </div>
+                                            <p class="tile-subtitle">Responsible for testing projects to verify browser compatibility, SEO, Responsive for desktop and mobile.</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2015 (April - October)</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="work-5" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Field Engineer</h5>
+                                                <h6>Divine Computers</h6>
+                                            </div>
+                                            <p class="tile-subtitle">Responsible for troubleshooting computer and networkproblems, <br>
+                                            installation of networks solutions. Deployment of new computers/laptops etc.</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2014 - 2015</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="work-6" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Data Analyst</h5>
+                                                <h6>Segment Y</h6>
+                                            </div>
+                                            <p class="tile-subtitle">Data entry of various automotive statistics. <br>
+											Scanning automotive brochures and pricelists.<br>
+											Maintaining records of scanned materials and those published on-line.<br>
+											Supporting news & researches etc.</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2013 - 2014</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="work-7" data-aos="fade-left">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#work-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Network Field Engineer</h5>
+                                                <h6>Ethernet X-press</h6>
+                                            </div>
+                                            <p class="tile-subtitle">Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle...</p>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2012 - 2013</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section education">
+                    <div class="title" data-aos="zoom-in-down">
+                        <h4><i class="material-icons">school</i>Education</h4>
+                    </div>
+                    <div class="content">
+                        <div class="timeline">
+                            <div class="timeline-item" id="education-1" data-aos="zoom-in-down">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#education-1"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Innobuzz</h5>
+                                                <h6>Diploma In Web Application Security</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2016 - 2017</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="education-2" data-aos="zoom-in-down">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#education-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Libra Computer</h5>
+                                                <h6>Diploma In Hardware And Networking</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2011 - 2012</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="education-3" data-aos="zoom-in-down">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#education-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Living Hope Theological School</h5>
+                                                <h6>Bachelor of Theology</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2009 - 2011</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item" id="education-4" data-aos="zoom-in-down">
+                                <div class="timeline-left">
+                                    <a class="timeline-icon" href="#education-2"></a>
+                                </div>
+                                <div class="timeline-content">
+                                    <div class="tile tile-centered">
+                                        <div class="tile-content">
+                                            <div class="tile-title">
+                                                <h5>Don Bosco</h5>
+                                                <h6>Senior Secondary Course</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tile-action">
+                                            <b>2008 - 2009</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section projects">
+                    <div class="title" data-aos="zoom-in-down">
+                        <h4>Projects</h4>
+                    </div>
+                    <div class="content">
+                        <div class="columns">
+                            <div class="column col-6" data-aos="fade-up" data-aos-duration="1500">
+                                <a href="http://privateequity.weil.com">
+                                	<h5>Global Private Equity Watch</h5>
+                                </a>
+                                <h6>Weil</h6>
+                                <p>Convert psd to wordpress theme with custom functionality</p>
+                            </div>
+                            <div class="column col-6" data-aos="fade-up" data-aos-duration="1500">
+                                <a href="http://business-finance-restructuring.weil.com">
+                                	<h5>Weil Bankruptcy Blog</h5>
+                                </a>                                
+                                <h6>Weil</h6>
+                                <p>Convert psd to wordpress theme with custom functionality</p>
+                            </div>
+                            <div class="column col-6" data-aos="fade-up" data-aos-duration="1500">
+                                <a href="http://tax.weil.com">
+                                	<h5>Weil Tax Blog</h5>
+                                </a>                                
+                                <h6>Weil</h6>
+                                <p>Convert psd to wordpress theme with custom functionality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container banner bg-dark footer">
+    	<div class="columns">
+            <div class="column text-left">
+            	<h4>Follow me on:</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wiseman-fernandes/">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/wysman">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/wzmn">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function(){
+			particlesJS("particles-js", {
+			  "particles": {
+			    "number": {
+			      "value": 355,
+			      "density": {
+			        "enable": true,
+			        "value_area": 789.1476416322727
+			      }
+			    },
+			    "color": {
+			      "value": "#ffffff"
+			    },
+			    "shape": {
+			      "type": "circle",
+			      "stroke": {
+			        "width": 0,
+			        "color": "#000000"
+			      },
+			      "polygon": {
+			        "nb_sides": 5
+			      },
+			      "image": {
+			        "src": "img/github.svg",
+			        "width": 100,
+			        "height": 100
+			      }
+			    },
+			    "opacity": {
+			      "value": 0.48927153781200905,
+			      "random": false,
+			      "anim": {
+			        "enable": true,
+			        "speed": 0.2,
+			        "opacity_min": 0,
+			        "sync": false
+			      }
+			    },
+			    "size": {
+			      "value": 2,
+			      "random": true,
+			      "anim": {
+			        "enable": true,
+			        "speed": 2,
+			        "size_min": 0,
+			        "sync": false
+			      }
+			    },
+			    "line_linked": {
+			      "enable": false,
+			      "distance": 150,
+			      "color": "#ffffff",
+			      "opacity": 0.4,
+			      "width": 1
+			    },
+			    "move": {
+			      "enable": true,
+			      "speed": 0.6,
+			      "direction": "top-right",
+			      "random": true,
+			      "straight": false,
+			      "out_mode": "out",
+			      "bounce": false,
+			      "attract": {
+			        "enable": false,
+			        "rotateX": 600,
+			        "rotateY": 1200
+			      }
+			    }
+			  },
+			  "interactivity": {
+			    "detect_on": "canvas",
+			    "events": {
+			      "onhover": {
+			        "enable": true,
+			        "mode": "bubble"
+			      },
+			      "onclick": {
+			        "enable": true,
+			        "mode": "push"
+			      },
+			      "resize": true
+			    },
+			    "modes": {
+			      "grab": {
+			        "distance": 400,
+			        "line_linked": {
+			          "opacity": 1
+			        }
+			      },
+			      "bubble": {
+			        "distance": 83.91608391608392,
+			        "size": 1,
+			        "duration": 3,
+			        "opacity": 1,
+			        "speed": 3
+			      },
+			      "repulse": {
+			        "distance": 200,
+			        "duration": 0.4
+			      },
+			      "push": {
+			        "particles_nb": 4
+			      },
+			      "remove": {
+			        "particles_nb": 2
+			      }
+			    }
+			  },
+			  "retina_detect": true
+			});
+			var scene1 = document.getElementById('scene1');
+			var scene2 = document.getElementById('scene2');
+			var scene3 = document.getElementById('scene3');
+			var parallaxInstance1 = new Parallax(scene1);
+			var parallaxInstance2 = new Parallax(scene2);
+			var parallaxInstance3 = new Parallax(scene3);
+            AOS.init();
+		})
+    </script>
+</body>
+</html>
